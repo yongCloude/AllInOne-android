@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AllInOne</string>
+
+    <!--  main screen  -->
+    <string name="main_title">있을 거 다 있는 앱</string>
+    <string name="main_function_bar_title">기능</string>
+    <string name="main_function_bar_hint">기능 명을 입력하세요.</string>
+
+
 </resources>

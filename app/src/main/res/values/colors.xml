@@ -8,4 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="main_title">#005792</color>
+
+    <color name="login_accept_button">#484C7F</color>
+    <color name="signup_email_request_button">#404B69</color>
+    <color name="signup_email_confirm_button">#685454</color>
 </resources>

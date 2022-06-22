@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/signup_input_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:text="@string/signup_auth_email_title" />
+
+    <EditText
+        android:id="@+id/signup_auth_email_input"
+        android:layout_width="203dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/box_border"
+        android:hint="@string/signup_auth_email_hint"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_input_title" />
+
+    <Button
+        android:id="@+id/signup_auth_email_request_button"
+        android:layout_width="123dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/signup_email_request_button"
+        app:layout_constraintStart_toEndOf="@+id/signup_auth_email_input"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:text="@string/signup_auth_email_request" />
+
+    <Button
+        android:id="@+id/signup_auth_email_confirm_button"
+        android:layout_width="123dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/signup_email_confirm_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_auth_email_input"
+        tool:text="@string/signup_auth_email_confirm" />
+</androidx.constraintlayout.widget.ConstraintLayout>

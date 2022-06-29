@@ -14,7 +14,7 @@
         android:theme="@style/Theme.AllInOne"
         tools:targetApi="31">
         <activity
-            android:name=".activity_login"
+            android:name=".activity.auth.Auth"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

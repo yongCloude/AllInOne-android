@@ -12,4 +12,5 @@
     <color name="login_accept_button">#484C7F</color>
     <color name="signup_email_request_button">#404B69</color>
     <color name="signup_email_confirm_button">#685454</color>
+    <color name="signup_exception_alert_text">#FFAA64</color>
 </resources>

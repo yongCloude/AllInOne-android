@@ -1,5 +1,6 @@
 package com.hongik.pcrc.allinone.fragment.auth;
 
+import android.app.FragmentManager;
 import android.content.Context;
 import android.os.Bundle;
 
@@ -28,9 +29,10 @@ import org.w3c.dom.Text;
  */
 public class SignIn extends Fragment {
 
-    interface Callbacks {
-        void onSignInSelected();
+     public interface Callbacks {
+        void onSignUpSelected();
         void onResetPasswordSelected();
+        void onBackArrowSelected();
     }
 
     // TODO: Rename parameter arguments, choose names that match
@@ -80,6 +82,7 @@ public class SignIn extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
@@ -94,8 +97,22 @@ public class SignIn extends Fragment {
         signUp = view.findViewById(R.id.login_sign_up);
         resetPassword = view.findViewById(R.id.login_reset_password_button);
 
+
+        backArrow.setOnClickListener(v -> {
+            callbacks.onBackArrowSelected();
+        });
+
+        signUp.setOnClickListener(v -> {
+            callbacks.onSignUpSelected();
+        });
+
+        resetPassword.setOnClickListener(v -> {
+            callbacks.onResetPasswordSelected();
+        });
+
         return view;
     }
+
 
     @Override
     public void onStart() {
@@ -142,7 +159,7 @@ public class SignIn extends Fragment {
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-//        callbacks = (Callbacks) context;
+        callbacks = (Callbacks) context;
     }
 
     @Override

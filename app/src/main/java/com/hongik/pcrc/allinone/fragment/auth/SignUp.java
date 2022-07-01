@@ -4,11 +4,20 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.hongik.pcrc.allinone.R;
+
+import org.w3c.dom.Text;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +25,12 @@ import com.hongik.pcrc.allinone.R;
  * create an instance of this fragment.
  */
 public class SignUp extends Fragment {
+
+    public static String TAG = "SignUp";
+
+    public interface Callbacks {
+        void onBackArrowSelected();
+    }
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,6 +40,14 @@ public class SignUp extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private Callbacks callbacks;
+
+    private ImageButton backArrow;
+    private TextView signUpTitle;
+
+    LinearLayout containerId;
+    private EditText idInput;
 
     public SignUp() {
         // Required empty public constructor
@@ -61,6 +84,43 @@ public class SignUp extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sign_up, container, false);
+        View view = inflater.inflate(R.layout.fragment_sign_up, container, false);
+        backArrow = view.findViewById(R.id.signup_back_button);
+        signUpTitle = view.findViewById(R.id.signup_title);
+
+        containerId = view.findViewById(R.id.signup_container_id);
+        View idView = inflater.inflate(R.layout.item_sign_up_id, containerId, true);
+        idInput = idView.findViewById(R.id.signup_id_input);
+
+        backArrow.setOnClickListener(v -> {
+
+        });
+
+        return view;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+
+        TextWatcher idTextWatcher = new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        };
+
+        idInput.addTextChangedListener(idTextWatcher);
     }
 }

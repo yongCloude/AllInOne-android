@@ -6,6 +6,7 @@
     <string name="main_function_bar_title">기능</string>
     <string name="main_function_bar_hint">기능 명을 입력하세요.</string>
 
+    <string name="exception_alert">예외 처리 메세지</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

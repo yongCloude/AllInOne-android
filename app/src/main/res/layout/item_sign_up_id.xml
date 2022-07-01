@@ -9,23 +9,31 @@
         android:id="@+id/signup_id_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tool:text="@string/signup_id_title" />
+        android:text="@string/signup_id_title" />
 
     <EditText
         android:id="@+id/signup_id_input"
-        android:layout_width="360dp"
+        android:layout_width="0dp"
         android:layout_height="36dp"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="7dp"
         android:background="@drawable/box_border"
         android:hint="@string/signup_id_hint"
         android:inputType="text"
         android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signup_id_title" />
+
+    <TextView
+        android:id="@+id/signup_id_alert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/signup_exception_alert_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_id_input"
+        tool:text="@string/exception_alert" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

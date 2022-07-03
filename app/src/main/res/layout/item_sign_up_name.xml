@@ -6,50 +6,35 @@
     xmlns:tool="http://schemas.android.com/tools">
 
     <TextView
-        android:id="@+id/signup_input_title"
+        android:id="@+id/signup_name_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/signup_password_title" />
+        android:text="@string/signup_name_title" />
 
     <EditText
-        android:id="@+id/signup_password_input"
+        android:id="@+id/signup_name_input"
         android:layout_width="0dp"
         android:layout_height="36dp"
         android:layout_marginTop="7dp"
         android:background="@drawable/box_border"
-        android:hint="@string/signup_password_hint"
-        android:imeOptions="actionNext"
-        android:inputType="textPassword"
+        android:hint="@string/signup_name_hint"
+        android:inputType="text"
         android:paddingStart="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_input_title" />
-
-    <EditText
-        android:id="@+id/signup_password_confirm_input"
-        android:layout_width="0dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="7dp"
-        android:background="@drawable/box_border"
-        android:hint="@string/signup_password_confirm"
         android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_password_input" />
+        app:layout_constraintTop_toBottomOf="@+id/signup_name_title" />
 
     <TextView
-        android:id="@+id/signup_password_alert"
-        android:layout_width="wrap_content"
+        android:id="@+id/signup_name_alert"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/signup_exception_alert_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_password_confirm_input"
+        app:layout_constraintTop_toBottomOf="@+id/signup_name_input"
         tool:text="@string/exception_alert" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

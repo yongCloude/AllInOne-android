@@ -12,11 +12,11 @@
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tool:text="@string/signup_auth_email_title" />
+        android:text="@string/signup_auth_email_title" />
 
     <EditText
         android:id="@+id/signup_auth_email_input"
-        android:layout_width="203dp"
+        android:layout_width="150dp"
         android:layout_height="36dp"
         android:layout_marginTop="7dp"
         android:background="@drawable/box_border"
@@ -29,21 +29,25 @@
     <Button
         android:id="@+id/signup_auth_email_request_button"
         android:layout_width="123dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/signup_email_request_button"
         app:layout_constraintStart_toEndOf="@+id/signup_auth_email_input"
         app:layout_constraintTop_toTopOf="parent"
-        tool:text="@string/signup_auth_email_request" />
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:text="@string/signup_auth_email_request" />
 
     <Button
         android:id="@+id/signup_auth_email_confirm_button"
-        android:layout_width="123dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="11dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
         android:backgroundTint="@color/signup_email_confirm_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signup_auth_email_input"
-        tool:text="@string/signup_auth_email_confirm" />
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:text="@string/signup_auth_email_confirm" />
 </androidx.constraintlayout.widget.ConstraintLayout>

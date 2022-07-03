@@ -16,4 +16,5 @@
     <string name="signup_gender_title">성별</string>
     <string name="signup_phone_number_title">전화번호</string>
     <string name="signup_birth_title">생년월일</string>
+    <string name="signup_accept">회원가입</string>
 </resources>

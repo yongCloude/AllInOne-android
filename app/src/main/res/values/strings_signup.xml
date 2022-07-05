@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="signup_title">아이디를 입력해주세요.</string>
+    <string name="signup_id_title">아이디</string>
+    <string name="signup_id_hint">이메일을 입력해주세요.</string>
+    <string name="signup_auth_email_title">이메일 인증</string>
+    <string name="signup_auth_email_hint">인증번호 입력</string>
+    <string name="signup_auth_email_request">인증번호 요청</string>
+    <string name="signup_auth_email_request_retry">인증번호 재요청</string>
+    <string name="signup_auth_email_confirm">확인</string>
+    <string name="signup_password_title">비밀번호</string>
+    <string name="signup_password_hint">비밀번호를 입력해주세요</string>
+    <string name="signup_password_confirm">비밀번호 확인</string>
+    <string name="signup_name_title">이름</string>
+    <string name="signup_name_hint">이름을 입력해주세요.</string>
+    <string name="signup_gender_title">성별</string>
+    <string name="signup_phone_number_title">전화번호</string>
+    <string name="signup_birth_title">생년월일</string>
+    <string name="signup_accept">회원가입</string>
+</resources>
